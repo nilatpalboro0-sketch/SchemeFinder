@@ -1,0 +1,360 @@
+[
+  {
+    "id": "PMKISAN",
+    "name": "PM-KISAN",
+    "state": ["Assam", "All India"],
+    "category": "Agriculture",
+    "description": "Pradhan Mantri Kisan Samman Nidhi is the Government of India's income support programme for eligible landholding farmer families.",
+    "benefits": [
+      "Income support as described by the official PM-KISAN portal"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": ["Farmer"],
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Landholding, exclusion conditions and other requirements must be checked on the official PM-KISAN portal."
+    },
+    "documents": [
+      "Check the official portal for the current document requirements"
+    ],
+    "application_steps": [
+      "Read the current official eligibility guidance",
+      "Use the official PM-KISAN portal or local government channel",
+      "Follow the current verification and registration instructions"
+    ],
+    "source_url": "https://pmkisan.gov.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "PM-KISAN official portal",
+    "is_demo": false
+  },
+  {
+    "id": "NSP",
+    "name": "National Scholarship Portal",
+    "state": ["Assam", "All India"],
+    "category": "Education",
+    "description": "The National Scholarship Portal is the Government of India's one-stop platform for scholarship application, processing and disbursal services.",
+    "benefits": [
+      "Browse scholarship opportunities listed on the official portal",
+      "Submit and track applications where a scholarship is open"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Eligibility differs by scholarship. Check the individual scholarship notice on the official portal."
+    },
+    "documents": [
+      "Requirements vary by scholarship; check the individual official notice"
+    ],
+    "application_steps": [
+      "Register or sign in on the official portal",
+      "Review the individual scholarship requirements",
+      "Submit the application through the official portal when the window is open"
+    ],
+    "source_url": "https://scholarships.gov.in/",
+    "application_url": "https://scholarships.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "National Scholarship Portal",
+    "is_demo": false
+  },
+  {
+    "id": "NSAP",
+    "name": "National Social Assistance Programme",
+    "state": ["Assam", "All India"],
+    "category": "Social Welfare",
+    "description": "The National Social Assistance Programme is a Government of India social assistance programme. The official NSAP page describes its pension and social assistance components.",
+    "benefits": [
+      "Information about social assistance components described by the official NSAP page"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Component-specific age, household and other eligibility rules must be checked with the official programme or state authority."
+    },
+    "documents": [
+      "Check the official programme or state authority for current document requirements"
+    ],
+    "application_steps": [
+      "Review the official NSAP information",
+      "Contact the relevant state or local authority for the applicable component",
+      "Follow the current official application and verification process"
+    ],
+    "source_url": "https://nsap.nic.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "National Social Assistance Programme",
+    "is_demo": false
+  },
+  {
+    "id": "NMMSS",
+    "name": "National Means-cum-Merit Scholarship Scheme",
+    "state": ["Assam", "All India"],
+    "category": "Education",
+    "description": "A scholarship programme intended to support meritorious students from economically weaker families and reduce school dropouts.",
+    "benefits": [
+      "Scholarship support as described in the current official notice",
+      "Application and status services through the National Scholarship Portal"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": ["Student"],
+      "education": ["Higher Secondary"],
+      "max_annual_income": 350000,
+      "verification_note": "Selection tests, school requirements, income limits and renewal conditions must be checked in the current official notice."
+    },
+    "documents": [
+      "Income certificate and student identity documents as required by the current notice",
+      "Check the official portal for the complete list"
+    ],
+    "application_steps": [
+      "Review the current scheme notice on the National Scholarship Portal",
+      "Register or sign in through the official portal",
+      "Submit the application through the school and portal verification process"
+    ],
+    "source_url": "https://scholarships.gov.in/",
+    "application_url": "https://scholarships.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "National Scholarship Portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMFBY",
+    "name": "Pradhan Mantri Fasal Bima Yojana",
+    "state": ["Assam", "All India"],
+    "category": "Agriculture",
+    "description": "A crop insurance programme that provides insurance protection against specified crop losses and natural risks.",
+    "benefits": [
+      "Crop insurance coverage under the applicable season and notification",
+      "Claims and premium information through the official portal"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": ["Farmer"],
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Eligibility, notified crops, premium, season and enrolment dates vary by state and crop season."
+    },
+    "documents": [
+      "Land or cultivation records",
+      "Bank account and identity details as required by the current notification"
+    ],
+    "application_steps": [
+      "Check the current crop and season notification",
+      "Contact the authorised bank, insurer or local agriculture office",
+      "Follow the official enrolment and claim process"
+    ],
+    "source_url": "https://pmfby.gov.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "Pradhan Mantri Fasal Bima Yojana official portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMKVY",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana",
+    "state": ["Assam", "All India"],
+    "category": "Jobs & Skills",
+    "description": "A national skill development programme that supports industry-relevant training and certification for eligible candidates.",
+    "benefits": [
+      "Access to approved skill training programmes",
+      "Assessment and certification under the applicable training programme"
+    ],
+    "eligibility": {
+      "min_age": 15,
+      "max_age": 45,
+      "occupations": ["Job Seeker", "Other", "Student"],
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Age, course, centre, residency and batch requirements depend on the current PMKVY guidelines."
+    },
+    "documents": [
+      "Identity and address documents required by the training centre",
+      "Check the selected course for additional requirements"
+    ],
+    "application_steps": [
+      "Search for an approved training centre and course",
+      "Confirm eligibility with the training centre",
+      "Complete enrolment and attend the approved training programme"
+    ],
+    "source_url": "https://www.skillindia.gov.in/",
+    "application_url": "https://www.skillindia.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "Skill India official portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMMVY",
+    "name": "Pradhan Mantri Matru Vandana Yojana",
+    "state": ["Assam", "All India"],
+    "category": "Women & Child Welfare",
+    "description": "A maternity benefit programme that provides conditional cash support to eligible pregnant women and lactating mothers.",
+    "benefits": [
+      "Maternity benefit support according to the current programme rules",
+      "Application support through the designated government system"
+    ],
+    "eligibility": {
+      "min_age": 19,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Benefit amount, pregnancy conditions, exclusions and documentation must be checked with the official programme or local authority."
+    },
+    "documents": [
+      "Identity and bank account details",
+      "Pregnancy, delivery and child details as required by the current process"
+    ],
+    "application_steps": [
+      "Contact the nearest Anganwadi Centre or authorised health facility",
+      "Confirm the current eligibility and document requirements",
+      "Complete registration and verification through the official channel"
+    ],
+    "source_url": "https://pmmvy.wcd.gov.in/",
+    "application_url": "https://pmmvy.wcd.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "PMMVY official portal",
+    "is_demo": false
+  },
+  {
+    "id": "IGNOAPS",
+    "name": "Indira Gandhi National Old Age Pension Scheme",
+    "state": ["Assam", "All India"],
+    "category": "Senior Citizens",
+    "description": "An old-age pension component of the National Social Assistance Programme for eligible low-income elderly persons.",
+    "benefits": [
+      "Pension assistance according to the applicable central and state rules",
+      "Information about application through the relevant state or local authority"
+    ],
+    "eligibility": {
+      "min_age": 60,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Household criteria, pension amount, state contribution and application process must be confirmed with the official authority."
+    },
+    "documents": [
+      "Age and identity proof",
+      "Income or household documents required by the state or local authority"
+    ],
+    "application_steps": [
+      "Review the official NSAP information",
+      "Contact the local government or state social welfare authority",
+      "Submit the required documents for verification"
+    ],
+    "source_url": "https://nsap.nic.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "National Social Assistance Programme",
+    "is_demo": false
+  },
+  {
+    "id": "PMAYG",
+    "name": "Pradhan Mantri Awaas Yojana - Gramin",
+    "state": ["Assam", "All India"],
+    "category": "Housing",
+    "description": "A rural housing programme supporting eligible households to build a pucca house with basic amenities.",
+    "benefits": [
+      "Housing assistance according to the approved rural housing guidelines",
+      "Support information through the official rural development systems"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Selection is based on official household data, deprivation criteria, rural status and government verification."
+    },
+    "documents": [
+      "Identity, household and land documents as requested by the local authority",
+      "Check the current state implementation requirements"
+    ],
+    "application_steps": [
+      "Check eligibility with the Gram Panchayat or local rural development office",
+      "Confirm that the household record is included in the official list",
+      "Follow the local verification and construction-stage process"
+    ],
+    "source_url": "https://pmayg.nic.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "PMAY-G official portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMJAY",
+    "name": "Ayushman Bharat - PM-JAY",
+    "state": ["Assam", "All India"],
+    "category": "Healthcare",
+    "description": "A publicly funded health assurance programme providing cashless hospitalisation cover to eligible families.",
+    "benefits": [
+      "Cashless treatment at participating hospitals for covered services",
+      "Eligibility and hospital information through the official portal"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Eligibility is based on the applicable beneficiary database and programme rules; confirm status through the official portal or helpline."
+    },
+    "documents": [
+      "Identity document for beneficiary verification",
+      "Check the official portal or empanelled hospital for current requirements"
+    ],
+    "application_steps": [
+      "Check beneficiary eligibility on the official PM-JAY portal",
+      "Visit an empanelled hospital or authorised help desk",
+      "Complete beneficiary verification before receiving covered treatment"
+    ],
+    "source_url": "https://pmjay.gov.in/",
+    "application_url": "https://pmjay.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "Ayushman Bharat PM-JAY official portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMEGP",
+    "name": "Prime Minister's Employment Generation Programme",
+    "state": ["Assam", "All India"],
+    "category": "Business & Startups",
+    "description": "A credit-linked subsidy programme supporting eligible entrepreneurs to establish new micro-enterprises in rural and urban areas.",
+    "benefits": [
+      "Margin money subsidy according to the applicable category and location",
+      "Loan and project guidance through the implementing agencies"
+    ],
+    "eligibility": {
+      "min_age": 18,
+      "max_age": null,
+      "occupations": ["Business Owner", "Other", "Job Seeker"],
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Project cost, prior assistance, activity restrictions, own contribution and bank appraisal requirements must be checked in the current guidelines."
+    },
+    "documents": [
+      "Identity, address and project documents",
+      "Project report and category documents where applicable"
+    ],
+    "application_steps": [
+      "Review the current PMEGP guidelines and eligible activities",
+      "Prepare a project report and submit through the official portal",
+      "Complete bank appraisal, training and verification requirements"
+    ],
+    "source_url": "https://www.kviconline.gov.in/pmegpeportal/pmegponlineapp.aspx",
+    "application_url": "https://www.kviconline.gov.in/pmegpeportal/pmegponlineapp.aspx",
+    "last_verified": "2026-11-21",
+    "source_name": "KVIC PMEGP official portal",
+    "is_demo": false
+  }
+]

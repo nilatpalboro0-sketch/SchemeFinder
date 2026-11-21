@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SchemeFinder helps citizens explore government schemes that may fit their circumstances.">
+  <title>SchemeFinder | Discover relevant schemes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="SchemeFinder home">
+        <img src="assets/logo.svg" alt="" width="38" height="38">
+        <span>SchemeFinder</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="main-menu">
+        <a href="#home">Home</a>
+        <a href="#discover">Discover schemes</a>
+        <a href="#official-schemes">Official library</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#discover">Get started <span aria-hidden="true">→</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A simpler way to find support</div>
+          <h1>Find government schemes that <em>match your needs.</em></h1>
+          <p class="hero-text">Discover benefits, understand eligibility requirements, and find the next steps — all in one place.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#discover">Find my schemes <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#how-it-works">Explore how it works <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="trust-note"><span class="lock-icon" aria-hidden="true">⌑</span> Private by design · No Aadhaar or bank details required</div>
+        </div>
+        <div class="hero-visual" aria-label="Illustration of citizens discovering public services">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="service-card service-card-top"><span class="service-icon blue">✓</span><span><strong>Matched for you</strong><small>3 schemes found</small></span></div>
+          <div class="service-card service-card-bottom"><span class="service-icon green">↗</span><span><strong>Next steps, made clear</strong><small>Simple guidance</small></span></div>
+          <div class="illustration">
+            <div class="sun"></div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+            <div class="building"><div class="roof"></div><div class="pillars"><i></i><i></i><i></i></div><div class="building-base"></div></div>
+            <div class="person person-a"><div class="head"></div><div class="body"></div><div class="leg leg-a"></div><div class="leg leg-b"></div></div>
+            <div class="person person-b"><div class="head"></div><div class="body"></div><div class="leg leg-a"></div><div class="leg leg-b"></div></div>
+            <div class="plant"><i></i><i></i><b></b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered"><div class="eyebrow">HOW IT WORKS</div><h2>Clarity at every step.</h2><p>From your story to your next step, SchemeFinder keeps it simple.</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><div class="step-icon">☷</div><h3>Tell us about yourself</h3><p>Share a few basics about your location, education, work and income.</p></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-icon">⌕</div><h3>Discover relevant schemes</h3><p>Our transparent rules compare your profile with the scheme requirements.</p></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Understand next steps</h3><p>See what matches, what needs checking, and which documents to prepare.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="discover-section section" id="discover">
+      <div class="container discovery-layout">
+        <div class="form-intro">
+          <div class="eyebrow">START YOUR SEARCH</div>
+          <h2>Let’s find what could help.</h2>
+          <p>A few details help us surface potentially relevant opportunities. You stay in control of your information.</p>
+          <div class="info-list"><div><span>01</span><p><strong>Private and minimal</strong><br>We only ask what’s needed for this demo.</p></div><div><span>02</span><p><strong>Transparent matching</strong><br>Every result explains its reasoning.</p></div></div>
+        </div>
+        <div class="form-card">
+          <div class="form-card-header"><div><h3>Your profile</h3><p>All fields are required unless marked optional.</p></div><span class="progress-label">STEP 1 <i></i> 1</span></div>
+          <form id="profile-form" novalidate>
+            <div class="form-section"><h4>Personal information</h4><div class="form-grid">
+              <label>State <select id="state" name="state" required><option value="">Select your state</option><option value="Assam">Assam</option><option value="Other">Other state</option></select><span class="field-error" data-error="state"></span></label>
+              <label>Age <input id="age" name="age" type="number" min="1" max="120" placeholder="e.g. 24" required><span class="field-error" data-error="age"></span></label>
+              <label class="full-width">Occupation <select id="occupation" name="occupation" required><option value="">Select your occupation</option><option>Student</option><option>Farmer</option><option>Job Seeker</option><option>Business Owner</option><option>Employed</option><option>Other</option></select><span class="field-error" data-error="occupation"></span></label>
+              <div class="pin-helper full-width">
+                <label for="pincode">Find your state with a PIN code <span class="optional">(optional)</span></label>
+                <div class="pin-row">
+                  <input id="pincode" name="pincode" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="6" placeholder="e.g. 781001">
+                  <button class="button button-secondary" id="lookup-pincode" type="button">Find state</button>
+                </div>
+                <p class="field-hint" id="pincode-status" role="status">Uses the public Zippopotam.us API. Your PIN code is not saved.</p>
+              </div>
+            </div></div>
+            <div class="form-section"><h4>Education & finances</h4><div class="form-grid">
+              <label>Highest education <select id="education" name="education" required><option value="">Select education level</option><option>School</option><option>Higher Secondary</option><option>Undergraduate</option><option>Postgraduate</option><option>Other</option><option>Not applicable</option></select><span class="field-error" data-error="education"></span></label>
+              <label>Annual family income <div class="input-prefix"><span>₹</span><input id="income" name="income" type="number" min="0" placeholder="e.g. 180000" required></div><span class="field-error" data-error="income"></span></label>
+            </div></div>
+            <p class="privacy-note"><span aria-hidden="true">▣</span> Your information is used only to identify potentially relevant schemes and is not saved. If you use the optional PIN lookup, the PIN is sent to the public Zippopotam.us API to identify your state.</p>
+            <p class="live-match-status" id="live-match-status" role="status">Complete your profile to see related schemes automatically.</p>
+            <div class="form-actions"><button class="button button-secondary reset-button" id="reset-form" type="button">Reset</button><button class="button button-primary submit-button" type="submit">Find relevant schemes <span aria-hidden="true">→</span></button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section section" id="results" hidden>
+      <div class="container">
+        <div class="results-header"><div><div class="eyebrow">YOUR DISCOVERY</div><h2>Potentially relevant for you.</h2><p id="results-summary"></p></div><div class="results-header-actions"><button class="button button-secondary" id="search-web" type="button">Search web for schemes ↗</button><button class="button button-secondary" id="edit-profile" type="button">← Edit my profile</button></div></div>
+        <div class="results-toolbar"><div class="filter-label">Filter by category</div><div class="filter-list" id="filters"><button class="filter active" data-filter="All">All schemes</button></div></div>
+        <div id="results-status" class="status-message" role="status"></div>
+        <div class="web-results" id="web-results" hidden></div>
+        <div class="results-grid" id="results-grid"></div>
+        <div class="results-disclaimer">These are potential matches based on the information provided. Always verify the current requirements on an official government source before applying.</div>
+      </div>
+    </section>
+
+    <section class="official-library section" id="official-schemes">
+      <div class="container">
+        <div class="section-heading library-heading"><div class="eyebrow">VERIFIED PUBLIC LIBRARY</div><h2>Explore official schemes.</h2><p>Only verified records appear here. Always confirm current details on the linked official source.</p></div>
+        <div class="library-toolbar">
+          <label class="library-search"><span aria-hidden="true">⌕</span><input id="library-search" type="search" placeholder="Search scheme name"></label>
+          <select id="library-state" aria-label="Filter by state"><option value="">All states</option><option value="Assam">Assam</option><option value="All India">All India</option></select>
+        </div>
+        <div class="library-grid" id="library-grid"></div>
+      </div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="container about-box"><div><div class="eyebrow">BUILT FOR CLARITY</div><h2>Public support should be easier to understand.</h2></div><p>SchemeFinder is a hackathon prototype focused on making government scheme information more approachable. It does not make eligibility decisions or guarantee approval.</p></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#home"><img src="assets/logo.svg" alt="" width="34" height="34"><span>SchemeFinder</span></a><p>Making public benefits easier to discover.</p></div><div><h4>Explore</h4><a href="#discover">Discover schemes</a><a href="#how-it-works">How it works</a><a href="#about">About the project</a></div><div><h4>Important note</h4><p>Always verify scheme details with the relevant official department. This is a demonstration project.</p></div></div><div class="container footer-bottom"><span>© 2024 SchemeFinder AI · Hackathon project</span><span>Designed for citizens of Assam, with India in mind.</span></div></footer>
+
+  <div class="modal-backdrop" id="scheme-modal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" type="button" aria-label="Close details">×</button><div id="modal-content"></div></div></div>
+  <!-- Fallback data lets the app work when index.html is opened directly. -->
+  <script id="embedded-scheme-data" type="application/json">[
+  {
+    "id": "PMKISAN",
+    "name": "PM-KISAN",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Agriculture",
+    "description": "Pradhan Mantri Kisan Samman Nidhi is the Government of India's income support programme for eligible landholding farmer families.",
+    "benefits": [
+      "Income support as described by the official PM-KISAN portal"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": [
+        "Farmer"
+      ],
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Landholding, exclusion conditions and other requirements must be checked on the official PM-KISAN portal."
+    },
+    "documents": [
+      "Check the official portal for the current document requirements"
+    ],
+    "application_steps": [
+      "Read the current official eligibility guidance",
+      "Use the official PM-KISAN portal or local government channel",
+      "Follow the current verification and registration instructions"
+    ],
+    "source_url": "https://pmkisan.gov.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "PM-KISAN official portal",
+    "is_demo": false
+  },
+  {
+    "id": "NSP",
+    "name": "National Scholarship Portal",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Education",
+    "description": "The National Scholarship Portal is the Government of India's one-stop platform for scholarship application, processing and disbursal services.",
+    "benefits": [
+      "Browse scholarship opportunities listed on the official portal",
+      "Submit and track applications where a scholarship is open"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Eligibility differs by scholarship. Check the individual scholarship notice on the official portal."
+    },
+    "documents": [
+      "Requirements vary by scholarship; check the individual official notice"
+    ],
+    "application_steps": [
+      "Register or sign in on the official portal",
+      "Review the individual scholarship requirements",
+      "Submit the application through the official portal when the window is open"
+    ],
+    "source_url": "https://scholarships.gov.in/",
+    "application_url": "https://scholarships.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "National Scholarship Portal",
+    "is_demo": false
+  },
+  {
+    "id": "NSAP",
+    "name": "National Social Assistance Programme",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Social Welfare",
+    "description": "The National Social Assistance Programme is a Government of India social assistance programme. The official NSAP page describes its pension and social assistance components.",
+    "benefits": [
+      "Information about social assistance components described by the official NSAP page"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Component-specific age, household and other eligibility rules must be checked with the official programme or state authority."
+    },
+    "documents": [
+      "Check the official programme or state authority for current document requirements"
+    ],
+    "application_steps": [
+      "Review the official NSAP information",
+      "Contact the relevant state or local authority for the applicable component",
+      "Follow the current official application and verification process"
+    ],
+    "source_url": "https://nsap.nic.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "National Social Assistance Programme",
+    "is_demo": false
+  },
+  {
+    "id": "NMMSS",
+    "name": "National Means-cum-Merit Scholarship Scheme",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Education",
+    "description": "A scholarship programme intended to support meritorious students from economically weaker families and reduce school dropouts.",
+    "benefits": [
+      "Scholarship support as described in the current official notice",
+      "Application and status services through the National Scholarship Portal"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": [
+        "Student"
+      ],
+      "education": [
+        "Higher Secondary"
+      ],
+      "max_annual_income": 350000,
+      "verification_note": "Selection tests, school requirements, income limits and renewal conditions must be checked in the current official notice."
+    },
+    "documents": [
+      "Income certificate and student identity documents as required by the current notice",
+      "Check the official portal for the complete list"
+    ],
+    "application_steps": [
+      "Review the current scheme notice on the National Scholarship Portal",
+      "Register or sign in through the official portal",
+      "Submit the application through the school and portal verification process"
+    ],
+    "source_url": "https://scholarships.gov.in/",
+    "application_url": "https://scholarships.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "National Scholarship Portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMFBY",
+    "name": "Pradhan Mantri Fasal Bima Yojana",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Agriculture",
+    "description": "A crop insurance programme that provides insurance protection against specified crop losses and natural risks.",
+    "benefits": [
+      "Crop insurance coverage under the applicable season and notification",
+      "Claims and premium information through the official portal"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": [
+        "Farmer"
+      ],
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Eligibility, notified crops, premium, season and enrolment dates vary by state and crop season."
+    },
+    "documents": [
+      "Land or cultivation records",
+      "Bank account and identity details as required by the current notification"
+    ],
+    "application_steps": [
+      "Check the current crop and season notification",
+      "Contact the authorised bank, insurer or local agriculture office",
+      "Follow the official enrolment and claim process"
+    ],
+    "source_url": "https://pmfby.gov.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "Pradhan Mantri Fasal Bima Yojana official portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMKVY",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Jobs & Skills",
+    "description": "A national skill development programme that supports industry-relevant training and certification for eligible candidates.",
+    "benefits": [
+      "Access to approved skill training programmes",
+      "Assessment and certification under the applicable training programme"
+    ],
+    "eligibility": {
+      "min_age": 15,
+      "max_age": 45,
+      "occupations": [
+        "Job Seeker",
+        "Other",
+        "Student"
+      ],
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Age, course, centre, residency and batch requirements depend on the current PMKVY guidelines."
+    },
+    "documents": [
+      "Identity and address documents required by the training centre",
+      "Check the selected course for additional requirements"
+    ],
+    "application_steps": [
+      "Search for an approved training centre and course",
+      "Confirm eligibility with the training centre",
+      "Complete enrolment and attend the approved training programme"
+    ],
+    "source_url": "https://www.skillindia.gov.in/",
+    "application_url": "https://www.skillindia.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "Skill India official portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMMVY",
+    "name": "Pradhan Mantri Matru Vandana Yojana",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Women & Child Welfare",
+    "description": "A maternity benefit programme that provides conditional cash support to eligible pregnant women and lactating mothers.",
+    "benefits": [
+      "Maternity benefit support according to the current programme rules",
+      "Application support through the designated government system"
+    ],
+    "eligibility": {
+      "min_age": 19,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Benefit amount, pregnancy conditions, exclusions and documentation must be checked with the official programme or local authority."
+    },
+    "documents": [
+      "Identity and bank account details",
+      "Pregnancy, delivery and child details as required by the current process"
+    ],
+    "application_steps": [
+      "Contact the nearest Anganwadi Centre or authorised health facility",
+      "Confirm the current eligibility and document requirements",
+      "Complete registration and verification through the official channel"
+    ],
+    "source_url": "https://pmmvy.wcd.gov.in/",
+    "application_url": "https://pmmvy.wcd.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "PMMVY official portal",
+    "is_demo": false
+  },
+  {
+    "id": "IGNOAPS",
+    "name": "Indira Gandhi National Old Age Pension Scheme",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Senior Citizens",
+    "description": "An old-age pension component of the National Social Assistance Programme for eligible low-income elderly persons.",
+    "benefits": [
+      "Pension assistance according to the applicable central and state rules",
+      "Information about application through the relevant state or local authority"
+    ],
+    "eligibility": {
+      "min_age": 60,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Household criteria, pension amount, state contribution and application process must be confirmed with the official authority."
+    },
+    "documents": [
+      "Age and identity proof",
+      "Income or household documents required by the state or local authority"
+    ],
+    "application_steps": [
+      "Review the official NSAP information",
+      "Contact the local government or state social welfare authority",
+      "Submit the required documents for verification"
+    ],
+    "source_url": "https://nsap.nic.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "National Social Assistance Programme",
+    "is_demo": false
+  },
+  {
+    "id": "PMAYG",
+    "name": "Pradhan Mantri Awaas Yojana - Gramin",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Housing",
+    "description": "A rural housing programme supporting eligible households to build a pucca house with basic amenities.",
+    "benefits": [
+      "Housing assistance according to the approved rural housing guidelines",
+      "Support information through the official rural development systems"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Selection is based on official household data, deprivation criteria, rural status and government verification."
+    },
+    "documents": [
+      "Identity, household and land documents as requested by the local authority",
+      "Check the current state implementation requirements"
+    ],
+    "application_steps": [
+      "Check eligibility with the Gram Panchayat or local rural development office",
+      "Confirm that the household record is included in the official list",
+      "Follow the local verification and construction-stage process"
+    ],
+    "source_url": "https://pmayg.nic.in/",
+    "application_url": null,
+    "last_verified": "2026-11-21",
+    "source_name": "PMAY-G official portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMJAY",
+    "name": "Ayushman Bharat - PM-JAY",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Healthcare",
+    "description": "A publicly funded health assurance programme providing cashless hospitalisation cover to eligible families.",
+    "benefits": [
+      "Cashless treatment at participating hospitals for covered services",
+      "Eligibility and hospital information through the official portal"
+    ],
+    "eligibility": {
+      "min_age": null,
+      "max_age": null,
+      "occupations": null,
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Eligibility is based on the applicable beneficiary database and programme rules; confirm status through the official portal or helpline."
+    },
+    "documents": [
+      "Identity document for beneficiary verification",
+      "Check the official portal or empanelled hospital for current requirements"
+    ],
+    "application_steps": [
+      "Check beneficiary eligibility on the official PM-JAY portal",
+      "Visit an empanelled hospital or authorised help desk",
+      "Complete beneficiary verification before receiving covered treatment"
+    ],
+    "source_url": "https://pmjay.gov.in/",
+    "application_url": "https://pmjay.gov.in/",
+    "last_verified": "2026-11-21",
+    "source_name": "Ayushman Bharat PM-JAY official portal",
+    "is_demo": false
+  },
+  {
+    "id": "PMEGP",
+    "name": "Prime Minister's Employment Generation Programme",
+    "state": [
+      "Assam",
+      "All India"
+    ],
+    "category": "Business & Startups",
+    "description": "A credit-linked subsidy programme supporting eligible entrepreneurs to establish new micro-enterprises in rural and urban areas.",
+    "benefits": [
+      "Margin money subsidy according to the applicable category and location",
+      "Loan and project guidance through the implementing agencies"
+    ],
+    "eligibility": {
+      "min_age": 18,
+      "max_age": null,
+      "occupations": [
+        "Business Owner",
+        "Other",
+        "Job Seeker"
+      ],
+      "education": null,
+      "max_annual_income": null,
+      "verification_note": "Project cost, prior assistance, activity restrictions, own contribution and bank appraisal requirements must be checked in the current guidelines."
+    },
+    "documents": [
+      "Identity, address and project documents",
+      "Project report and category documents where applicable"
+    ],
+    "application_steps": [
+      "Review the current PMEGP guidelines and eligible activities",
+      "Prepare a project report and submit through the official portal",
+      "Complete bank appraisal, training and verification requirements"
+    ],
+    "source_url": "https://www.kviconline.gov.in/pmegpeportal/pmegponlineapp.aspx",
+    "application_url": "https://www.kviconline.gov.in/pmegpeportal/pmegponlineapp.aspx",
+    "last_verified": "2026-11-21",
+    "source_name": "KVIC PMEGP official portal",
+    "is_demo": false
+  }
+]</script>
+  <script src="script.js"></script>
+</body>
+</html>
